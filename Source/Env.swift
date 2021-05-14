@@ -57,7 +57,7 @@ public class Env {
     self.keys
       .map { $0 }
       .filter { !$0.isEmpty }
-      .forEach{ self.set($0!, nil) }
+      .forEach{ self.set($0, nil) }
   }
   
   /**
