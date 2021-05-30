@@ -76,7 +76,7 @@ public class ChooseSettings<T> {
     }
     
     func choiceWithStringValue(_ value: String) -> T? {
-        let possibleIndex = choices.index { $0.choice == value }
+        let possibleIndex = choices.firstIndex { $0.choice == value }
         if let index = possibleIndex {
             return choices[index].callback()
         }
